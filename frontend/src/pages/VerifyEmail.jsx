@@ -74,7 +74,7 @@ function VerifyEmail() {
      const handleVerify=async(e)=>{
         e.preventDefault();
         const code=verificationCode.join("");
-        console.log(code);
+        // console.log(code);
         // if(code.length===6){
         //     console.log("VerificationCode", verificationCode);
         // }

@@ -3,7 +3,8 @@ import axios from 'axios';
 import { isAbaRouting } from 'validator';
 
 
-const BASE_URL= "http://127.0.0.1:8000/api/v1"
+// const BASE_URL= https://authentication-yacw.onrender.com/"http://127.0.0.1:8000/api/v1"
+const BASE_URL=import.meta.env.MODE==='development'?"http://127.0.0.1:8000/api/v1":"/api/v1"
 axios.defaults.withCredentials=true
 
 export const userStore = create((set)=>({
